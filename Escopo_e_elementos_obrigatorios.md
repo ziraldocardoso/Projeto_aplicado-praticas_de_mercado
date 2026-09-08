@@ -43,9 +43,8 @@ A aplicação desenvolvida deverá ser hospedada em um ambiente de nuvem públic
 * **Criptografia e Certificado (HTTPS):**
 * A configuração de HTTPS via Certbot (versão 5.4 ou superior) com suporte a emissão de certificados SSL/TLS para endereços IP públicos diretamente pela [Let's Encrypt](https://letsencrypt.org/2026/01/15/6day-and-ip-general-availability) deverá ser realizada. Deverá ser utilizada a opção de autorrenovação (automática), se disponível.
 * O servidor web (Nginx ou Apache) deverá ser configurado para realizar o **redirecionamento automático** de todo o tráfego HTTP para HTTPS.
-* A configuração SSL/TLS do servidor deverá ser submetida ao teste [Qualys SSL Labs - SSL Server Test](https://www.ssllabs.com/ssltest/), devendo obrigatoriamente obter **nota A** e apresentar o suporte a PQC ativado (*This server supports PQC (Post-Quantum Cryptography) key exchange*).
-
-
+* Para o caso de uso de IP como endereço de acesso: A configuração SSL/TLS do servidor deverá ser submetida ao teste [SSL.org - SSL Certificate Checker](https://www.ssl.org/), devendo obrigatoriamente possuir **Certificate Trusted: YES e Algorithm / Key Type & Size: Good signature · Acceptable key** e apresentar o suporte a PQC (Post-Quantum Cryptography) ativado por meio de um segundo teste [Digicert - TLS quantum readiness check](https://www.digicert.com/pqc-checker).
+* Para o caso de uso de domínio como endereço de acesso: A configuração SSL/TLS do servidor deverá ser submetida ao teste [Qualys SSL Labs - SSL Server Test](https://www.ssllabs.com/ssltest/), devendo obrigatoriamente obter **nota A** e apresentar o suporte a PQC ativado (*This server supports PQC (Post-Quantum Cryptography) key exchange*).
 
 ---
 
