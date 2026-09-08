@@ -129,7 +129,7 @@ Antes de submeter o projeto, verifique se:
 
 * [ ] A aplicação web está no ar e acessível por um IP público (Eixo 1).
 * [ ] O Web Server (Nginx ou Apache) está configurado com HTTPS (Certbot/Let's Encrypt) e redireciona o tráfego HTTP para HTTPS automaticamente (Eixo 1).
-* [ ] O teste no Qualys SSL Labs retornou **Nota A** e confirma a ativação do PQC (Eixo 1).
+* [ ] Os testes de TLS/SSL retornaram **Conformidade* ou **Nota A* (dependendo se IP ou domínio), com devida ativação de PQC (Eixo 1).
 * [ ] O acesso à nuvem utiliza boas práticas (uso de chave SSH e Fail2Ban configurado para a porta 22) (Eixo 1).
 * [ ] O código está versionado em um repositório público no GitHub e a conta está devidamente configurada (Eixo 2).
 * [ ] O `.gitignore` está configurado e não há chaves/senhas expostas no código (Eixo 2).
